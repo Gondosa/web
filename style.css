@@ -30,5 +30,20 @@ li a :hover:not(.active) {
 }
 
 * body {
-    background-color: rgb(173, 201, 209);
+    background-color: rgb(185, 234, 255);
 }
+
+.zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(10%); 
+    -webkit-transform: scale(10%); 
+    transform: scale(10%); 
+  }
