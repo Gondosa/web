@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Űrlap</title>
+    <title>Listák</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
@@ -13,149 +13,45 @@
     <link rel="manifest" href="Favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
-
+    
 </head>
 <body>
     <ul>
         <li><a href="index.html">Home</a> </li>
-        <li><a href="listak.html">Listák</a></li>
+        <li class="active"><a href="listak.html">Listák</a></li>
         <li><a href="tablazatok.html">Táblázatok</a></li>
-        <li class="active"><a href="urlap.html">Űrlap</a></li>
+        <li><a href="urlap.html">Űrlap</a></li>
         <li><a href="evszakok.html">Évszakok</a></li>
     </ul>
 
-    <h1>Űrlap</h1>
 
-    
-    <form>
-    
-    
-    <h2>A tovább lépéshez kérem jeletkezzen be</h2>   
 
     <div>
-        <label for="fname">Keresztnév:</label>
-        <input type="text" id="fname" name="fname" placeholder="Kereszt neved" required>
-    </div>
-
-    <br>
-   
-    <div>
-        <label for="lname">Vezetéknév:</label>
-        <input type="text" id="lname" name="lname" placeholder="Vezetékneved" required>
-    </div>
-
-    <br>
-
-    <div>
-        <label for="pass">Jelszó:</label>
-        <input type="password" id="pass" name="pass" maxlength="12" required>
-    </div>
-
-    <br>
-    
-    <div>
-        <label for="email">Email cím:</label>
-        <input type="email" id="email" name="email" placeholder="emailcimed@gmail.com">
+    <h1> Listák </h1>
+    <H2>Kendvenc Tantárgyaim</H2>
     </div>
     
-   <br>
 
-   <div>
-    <label for="phone">Telefon:</label>
-    <input type="tel" id="phone" name="phone" placeholder="+00 00 000000">
-   </div> 
+    <ol class="none">
+    <li>IKT</li>
+    <li>Matek</li>
+    <li>Testnevelés</li>
+    </ol>
 
-   <br>
-
-   <div>
-    <label for="bdate">Születési dátum:</label>
-    <input type="date" id="bdate" name="bdate">
-   </div>
-   
-   <br>
-
-   <div>
-    <label for="quantity">Mennyiség:</label>
-     <input type="number" id="quantity" name="quantity" min="0" max="99">
-   </div>
-
-   <br>
-
-   <div>
-    <label for="title">Cím:</label>
-
-     
-    <label for="Férfi">Férfi</label>
-    <input type="radio" name="title" value="Férfi">
-
-    <label for="Nő">Nő</label>
-    <input type="radio" name="title" value="Nő">
-
-   </div>
-
-
-
-   <br>
-
-
-   <div>
-    <select size=5>
-        <option>---Válasszon milyen pizzát szeretne.--- </option>
-        <option>Sonkás kukoricás</option>
-        <option>Hawai </option>
-        <option>Sajtos</option>
-        <option>Magyaros</option>
-        <option>Bolognai</option>
-        <option>Szalámis</option>
-        <option>Gyrosos pizza</option>
-        <option>Mexikói</option>
-    </select>
-
-   </div>
-
-   <br>
-
-   <div>
-    <p> Új Hozzászólások:</p>
-    <textarea cols=40 rows=4></textarea>
-   </div>
-
-   <br>
-
-   <div>
-    <label for="payment">Fízetés</label>
-    <select id="payment" name="payment">
-        <option value="Visa">Visa</option>
-        <option value="Paypal">Paypal</option>
-        <option value="Banki">Banki</option>
-    </select>
+    <div><h2> Kendvenc szabadidős tevékenységeim</h2></div>
     
-   </div>
-
-   <br>
+    <div>
+    <ul class="none">
+    <Li>Kosárlabdázás</Li>
+    <li>Motorozás</li>
+    <li>Biciklizés</li>
+    </ul> 
+    </div>
+    
 
     <div>
-        <input type="reset">
-    </div>
-
-    <br>
-
-    <div>
-      <a href="urlap2.html"><input type="submit"> </a> 
-    </div>
-
-
-     </form>
-
-     <div>
         <footer class="footer">
             <p>Author: Gondos Ábel<br>
             <a href="mailto:gondos@example.com">Gondos@example.com</a></p>
           </footer>
         </div>
-
-
-    
-</body>
-</html>
