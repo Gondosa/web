@@ -2,9 +2,9 @@
 
 
 ul {
-    list-style-position: none;
-    margin: 0;
-    padding: 0;
+    list-style-position: outside;
+    margin: 20px;
+    padding: 0px;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
 }
@@ -31,6 +31,7 @@ li a :hover:not(.active) {
 
 * body {
     background-color: rgb(50, 0, 93);
+    color: cornsilk;
 }
 
 .zoom {
@@ -49,11 +50,9 @@ li a :hover:not(.active) {
   }
   
   .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
- }
+    font-size: 13px;
+    padding: 10px;
+  }

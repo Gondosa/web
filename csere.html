@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csere</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>csere</h1>
+    <input type="button" value="kep" onclick="kepcsere()">
+    <input type="button" value="hattér" onclick="hatter()">
+    <img  id="kep"  src="img/haromszog.avif.png" alt="" width="200px" height="250px">
+   
+    <script>
+
+
+        function kepcsere() {
+            document.getElementById("kep").src = "img/images.avif.png";
+        }
+        function hatter(){
+            document.body.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

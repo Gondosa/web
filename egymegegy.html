@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mennyi 1+1</h1>
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Vállasz:</legend>
+            <input id="er" type="number" name="vlasz" id="valasz" placeholder="szam" oninput="check () ">
+            <h1 id="en">...</h1>
+        </fieldset>
+        
+    </form>
+
+    <script>
+        function check() {
+            if (valasz.value == 2) {
+                document.getElementById("er").innerText = "Nagyon jó"
+            }
+            else {
+                document.getElementById("er").innerText = "Buta vagy"            
+                }
+
+        }
+
+    </script>
+</body>
+</html>
