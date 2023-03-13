@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body onload="frissit()">
+    
+    <input type="button" value="-" onclick="db.value = Number(db.value) -1">
+    <input type="text"  id="db" value="1">
+    <input type="button" value="+" onclick="db.value = Number(db.value) +1">
+    <input type="button" value="Kosárba" onclick="ad('darab' , db.value)">
+    <br>
+    kenyér ára <span id="kenyer_ar">...ft</span>
+    
+
+
+    <script>
+        var _kenyer = 550;
+
+
+        function frissit(){
+            document.getElementById('kenyer_ar').innerText = _kenyer + "HUF"
+        }
+
+
+
+
+
+    function ad(nev,ertek){
+        localStorage.setItem(nev,ertek);
+    }
+    </script>
+    
+</body>
+</html>
