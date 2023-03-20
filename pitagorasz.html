@@ -13,6 +13,12 @@
         body {
           font-family: "Sofia", sans-serif;
         }
+
+        #haromszog{
+            border-left: 100px solid red;
+            border-top: 200px solid transparent;
+
+        }
         </style>
 
 
@@ -27,9 +33,12 @@ border-radius: 50px 20px; padding-left: 100px;   width: 500px;">
     
     <p>Adj meg legalább két oldalt</p>
     <form>
-        <p><input type="text" id="a" oninput="szam()"> a. oldal</p>
-        <p><input type="text" id="b" oninput="szam()"> b. oldal</p>
-        <p><input type="text" id="c" oninput="szam()"> c. oldal</p>
+        <label for="b_oldal">a. oldal</label>
+        <input type="text" id="b_oldal" oninput="rajzol()">
+        <br>
+        <label for="a_oldal">a. oldal</label>
+        <input type="text" id="a_oldal" oninput="rajzol()">
+
     </form> 
 </div>
 
@@ -37,12 +46,12 @@ border-radius: 50px 20px; padding-left: 100px;   width: 500px;">
 
     
 
+   <div id="haromszog">
+
+   </div>
 
 
-    <div class="arrow up"></div>
-    <div class="arrow down"></div>
-    <div class="arrow left"></div>
-    <div class="arrow right"></div>
+
 
     <script>
         function szam() {
@@ -55,6 +64,12 @@ border-radius: 50px 20px; padding-left: 100px;   width: 500px;">
             else if (b.value != 0 && c.value != 0) {
                 a.value = Math.sqrt((c.value * c.value)-(b.value * b.value));
             }
+        }
+        function rajzol() {
+            const haromsz = document.getElementById ("haromszog")
+                  haromsz.style =  "border-top:" + b_oldal.value + "px solid transparent;"
+                                + "border-left:" + a_oldal.value + "px solid red;"
+
         }
         
     </script>

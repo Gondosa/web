@@ -1,13 +1,5 @@
+#haromszog{
+    border-left: 100px solid red;
+    border-top: 100px solid transparent;
 
-
-.arrow {
- display: inline-block;
- width: 0;
- height: 0;
 }
-.arrow.down {
-    border-top: 10px solid #000;
-}
-.arrow.up {}
-.arrow.left {}
-.arrow.right {}
