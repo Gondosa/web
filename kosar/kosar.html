@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosár</title>
+
+    <style>
+        button {
+            width: 180px;
+            height: 180px;
+        }
+    </style>
+
+
+
+</head>
+
+<body onload="aktualis_ar(), kosar_firssit()">
+
+    <button onclick="kosarba('alma',1), kosar_firssit()">
+        alma <p id="alma">ÁR</p>
+    </button>
+
+    <button onclick="kosarba('korte',3), kosar_firssit()">
+        korte <p id="korte">ÁR</p>
+    </button>
+
+    <button onclick="kosarba('citrom',2), kosar_firssit()">
+        citrom <p id="citrom">ÁR</p>
+    </button>
+
+    <br><hr>
+    <table id="kosar" border="1">
+
+    </table>
+
+    <hr>
+
+
+    <script>
+        const alma_ar = 1500;
+        const korte_ar = 350;
+        const citrom_ar = 300;
+
+        function aktualis_ar() {
+            document.getElementById("alma").innerHTML = alma_ar + "Ft";
+            document.getElementById("korte").innerHTML = korte_ar + "Ft";
+            document.getElementById("citrom").innerHTML = citrom_ar + "Ft";
+        }
+        function kosarba(termek, darab) {
+            localStorage.setItem(termek, darab);
+        }
+        function kosar_firssit() {
+            let tablazat = "<caption>KOSÁR</caption><tr><th>TERMÉK:</th><th>DARAB:</th><th>ÁR:</th></tr><tr><td>ALMA:</td><td>"+ localStorage.getItem('alma') +"</td><td>"+ alma_ar +"</td></tr>";
+            document.getElementById("kosar").innerHTML = tablazat;
+        }
+    </script>
+</body>
+
+</html>
